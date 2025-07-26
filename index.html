@@ -2,91 +2,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Real Crypto Updates</title>
-    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="icon" type="image/png" href="favicon.png"/>
     <style>
         body {
-            margin: 0;
             font-family: Arial, sans-serif;
-            background: url('background.png') no-repeat center center fixed;
+            background-image: url('background.png');
             background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
             color: white;
             text-align: center;
+            margin: 0;
         }
-        .logo {
+        header img {
+            max-height: 80px;
             margin-top: 20px;
         }
         .plans {
             display: flex;
             justify-content: center;
-            margin-top: 20px;
-            gap: 40px;
+            margin: 40px 0;
         }
         .plan {
-            background-color: rgba(0, 0, 0, 0.8);
+            background: rgba(0, 0, 0, 0.7);
             padding: 20px;
+            margin: 0 15px;
             border-radius: 10px;
             width: 300px;
         }
-        .plan button {
-            padding: 10px 20px;
-            background-color: #00D084;
-            color: black;
+        .plan ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .plan li::before {
+            content: '✅ ';
+        }
+        .subscribe-button {
+            margin-top: 10px;
+            background-color: #00cc99;
+            color: white;
             border: none;
-            border-radius: 5px;
+            padding: 10px 20px;
             cursor: pointer;
+            border-radius: 8px;
+        }
+        .autotrader, .faq {
+            margin: 40px auto;
+            max-width: 800px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
         }
         footer {
-            margin-top: 60px;
-            padding: 40px;
-            background-color: rgba(0, 0, 0, 0.8);
+            margin-top: 50px;
+            font-size: 14px;
         }
-        h1, h2 {
-            margin-bottom: 10px;
+        a {
+            color: #00ccff;
         }
     </style>
 </head>
 <body>
-    <img src="logo.png" alt="Real Crypto Updates Logo" class="logo" width="150">
-    <h1>Real Crypto Updates</h1>
-    <h2>Master Trading with Real Updates</h2>
-    <h2>Live Crypto Signal Table</h2>
-    <p><em>(Streamlit-generated content will go here)</em></p>
+    <header>
+        <img src="logo.png" alt="Real Crypto Updates Logo">
+        <h1>Real Crypto Updates</h1>
+        <h2>Master Trading with Real Updates</h2>
+        <h3>Live Crypto Signal Table</h3>
+        <p><a href="https://realcryptoupdates.streamlit.app" target="_blank">
+            <button class="subscribe-button">View Signal Dashboard</button>
+        </a></p>
+    </header>
 
     <div class="plans">
         <div class="plan">
-            <h3>Basic Plan</h3>
-            <ul style="text-align: left;">
-                <li>✅ Daily crypto signal access</li>
-                <li>✅ Covers 8 major altcoins</li>
-                <li>✅ Default Stop-Loss (-5%) & Take-Profit (+10%)</li>
-                <li>✅ Dashboard access only</li>
+            <h2>Basic Plan</h2>
+            <ul>
+                <li>Daily crypto signal access</li>
+                <li>Covers 8 major altcoins</li>
+                <li>Default Stop-Loss (-5%) & Take-Profit (+10%)</li>
+                <li>Dashboard access only</li>
             </ul>
-            <a href="https://checkout.revolut.com/pay/a1b9167e-f3c2-41b5-85f6-b9db57fd6efc"><button>Subscribe</button></a>
+            <a href="https://checkout.revolut.com/pay/a1b9167e-f3c2-41b5-85f6-b9db57fd6efc">
+                <button class="subscribe-button">Subscribe</button>
+            </a>
         </div>
         <div class="plan">
-            <h3>Pro Plan</h3>
-            <ul style="text-align: left;">
-                <li>✅ Everything in Basic</li>
-                <li>✅ Access to Auto-Trader Bot (Coming Soon)</li>
-                <li>✅ Priority support and faster updates</li>
-                <li>✅ Exclusive Telegram Q&A access</li>
+            <h2>Pro Plan</h2>
+            <ul>
+                <li>Everything in Basic</li>
+                <li>Access to Auto-Trader Bot (Coming Soon)</li>
+                <li>Priority support and faster updates</li>
+                <li>Exclusive Telegram Q&A access</li>
             </ul>
-            <a href="https://checkout.revolut.com/pay/b83947eb-463d-46b2-91af-6e1a44115e0a"><button>Subscribe</button></a>
+            <a href="https://checkout.revolut.com/pay/b83947eb-463d-46b2-91af-6e1a44115e0a">
+                <button class="subscribe-button">Subscribe</button>
+            </a>
         </div>
     </div>
 
+    <div class="autotrader">
+        <h2>🤖 Auto-Trader Bot</h2>
+        <p>Our 100x leverage auto-trading bot is launching soon for Pro members. Stay tuned!</p>
+    </div>
+
+    <div class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <p><strong>When are signals updated?</strong><br>Signals are updated daily at 20:00 EET (Eastern European Time).</p>
+        <p><strong>How do I access the dashboard?</strong><br>Once subscribed, you’ll get a link to our real-time dashboard.</p>
+        <p><strong>What coins are included?</strong><br>Major altcoins: XRP, ADA, QNT, CRV, FIL, EGLD, and more.</p>
+    </div>
+
     <footer>
-        <h2>FAQ</h2>
-        <p><strong>When are the crypto signals and updates posted?</strong><br>
-        Every day at 20:00 EET (Eastern European Time).</p>
-        <p><strong>What does the Basic Plan include?</strong><br>
-        Access to daily signals, 8 altcoins, and dashboard view only.</p>
-        <p><strong>What’s included in the Pro Plan?</strong><br>
-        Everything in Basic plus Auto-Trader access, faster updates, and Telegram Q&A.</p>
-        <p><strong>How can I pay?</strong><br>
-        Using secure Revolut merchant links.</p>
+        &copy; 2025 Real Crypto Updates. All rights reserved.
     </footer>
 </body>
 </html>
