@@ -2,72 +2,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Real Crypto Updates</title>
-    <link rel="icon" href="favicon.png" />
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Real Crypto Updates</title>
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('background.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: white;
+      text-align: center;
+    }
+    header img {
+      width: 150px;
+      margin-top: 20px;
+    }
+    .slogan {
+      font-size: 24px;
+      margin: 10px 0 30px;
+    }
+    .crypto-table {
+      margin: 30px auto;
+      max-width: 800px;
+    }
+    .crypto-table table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: rgba(0,0,0,0.7);
+    }
+    .crypto-table th, .crypto-table td {
+      border: 1px solid #555;
+      padding: 10px;
+    }
+    .plans {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin: 40px 0;
+    }
+    .plan {
+      background-color: rgba(0,0,0,0.85);
+      padding: 20px;
+      border-radius: 10px;
+      width: 250px;
+    }
+    .plan h2 {
+      color: #fff;
+    }
+    .plan ul {
+      text-align: left;
+    }
+    .plan button {
+      background-color: #00cc99;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin-top: 15px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .cta {
+      margin: 50px 0;
+    }
+    .email-capture {
+      margin: 50px 0;
+    }
+    footer {
+      background-color: rgba(0,0,0,0.8);
+      padding: 30px;
+    }
+    .faq {
+      text-align: left;
+      max-width: 800px;
+      margin: auto;
+    }
+    .faq h3 {
+      margin-bottom: 10px;
+    }
+    .faq p {
+      margin: 5px 0 20px;
+    }
+  </style>
 </head>
 <body>
-    <div class="background-overlay"></div>
-    <div class="container">
-        <img src="logo.png" alt="Logo" class="logo" />
-        <h1 class="title">Real Crypto Updates</h1>
-        <p class="slogan">Master Trading with Real Updates.</p>
+  <header>
+    <img src="logo.png" alt="Real Crypto Updates Logo" />
+    <h1>Real Crypto Updates</h1>
+    <p class="slogan">Master Trading with Real Updates</p>
+  </header>
 
-        <section class="pricing">
-            <h2>Choose Your Plan</h2>
-            <div class="plans">
-                <div class="plan">
-                    <h3>Basic Plan</h3>
-                    <p>✔️ Daily crypto signal access<br/>✔️ Covers 8 major altcoins<br/>✔️ Default Stop-Loss (-5%) & Take-Profit (+10%)<br/>✔️ Dashboard access only</p>
-                    <a href="https://checkout.revolut.com/pay/a1b9167e-f3c2-41b5-85f6-b9db57fd6efc" class="btn">Subscribe</a>
-                </div>
-                <div class="plan">
-                    <h3>Pro Plan</h3>
-                    <p>✔️ Everything in Basic<br/>✔️ Access to the Auto-Trader Bot (Coming Soon)<br/>✔️ Priority support and faster updates<br/>✔️ Exclusive Telegram Q&A access</p>
-                    <a href="https://checkout.revolut.com/pay/b83947eb-463d-46b2-91af-6e1a44115e0a" class="btn">Subscribe</a>
-                </div>
-            </div>
-        </section>
+  <section class="crypto-table">
+    <h2>Live Crypto Signal Table</h2>
+    <p><em>(Streamlit-generated content will go here)</em></p>
+  </section>
 
-        <section class="autotrader">
-            <h2>🚧 Auto-Trader Bot</h2>
-            <p>Our 100x leverage auto-trading bot is launching soon.</p>
-        </section>
-
-        <section class="signal-table">
-            <h2>Crypto Signal Overview</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Pair</th>
-                        <th>Signal</th>
-                        <th>Price</th>
-                        <th>Stop Loss</th>
-                        <th>Take Profit</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr><td>BTC/USDT</td><td>Coming Soon</td><td>N/A</td><td>-5%</td><td>+10%</td></tr>
-                    <tr><td>ETH/USDT</td><td>Coming Soon</td><td>N/A</td><td>-5%</td><td>+10%</td></tr>
-                    <tr><td>XRP/USDT</td><td>Coming Soon</td><td>N/A</td><td>-5%</td><td>+10%</td></tr>
-                    <tr><td>ADA/USDT</td><td>Coming Soon</td><td>N/A</td><td>-5%</td><td>+10%</td></tr>
-                    <tr><td>QNT/USDT</td><td>Coming Soon</td><td>N/A</td><td>-5%</td><td>+10%</td></tr>
-                    <tr><td>CRV/USDT</td><td>Coming Soon</td><td>N/A</td><td>-5%</td><td>+10%</td></tr>
-                    <tr><td>FIL/USDT</td><td>Coming Soon</td><td>N/A</td><td>-5%</td><td>+10%</td></tr>
-                    <tr><td>EGLD/USDT</td><td>Coming Soon</td><td>N/A</td><td>-5%</td><td>+10%</td></tr>
-                </tbody>
-            </table>
-        </section>
-
-        <section class="email">
-            <h2>Get Notified</h2>
-            <form action="https://formspree.io/f/mldlbonw" method="POST">
-                <input type="email" name="email" placeholder="Enter your email..." required>
-                <button type="submit">Subscribe</button>
-            </form>
-        </section>
+  <section class="plans">
+    <div class="plan">
+      <h2>Basic Plan</h2>
+      <ul>
+        <li>✅ Daily crypto signal access</li>
+        <li>✅ Covers 8 major altcoins</li>
+        <li>✅ Default Stop-Loss (-5%) & Take-Profit (+10%)</li>
+        <li>✅ Dashboard access only</li>
+      </ul>
+      <a href="https://checkout.revolut.com/pay/a1b9167e-f3c2-41b5-85f6-b9db57fd6efc" target="_blank">
+        <button>Subscribe</button>
+      </a>
     </div>
+    <div class="plan">
+      <h2>Pro Plan</h2>
+      <ul>
+        <li>✅ Everything in Basic</li>
+        <li>✅ Access to Auto-Trader Bot (Coming Soon)</li>
+        <li>✅ Priority support and faster updates</li>
+        <li>✅ Exclusive Telegram Q&A access</li>
+      </ul>
+      <a href="https://checkout.revolut.com/pay/b83947eb-463d-46b2-91af-6e1a44115e0a" target="_blank">
+        <button>Subscribe</button>
+      </a>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>🚀 Auto-Trader Bot</h2>
+    <p>Our 100x leverage auto-trading bot is launching soon. Stay tuned!</p>
+  </section>
+
+  <section class="email-capture">
+    <form action="https://formspree.io/f/mldlbonw" method="POST">
+      <input type="email" name="email" placeholder="Enter your email" required style="padding:10px;width:250px;" />
+      <button type="submit" style="padding:10px 20px;">Subscribe</button>
+    </form>
+  </section>
+
+  <footer>
+    <div class="faq">
+      <h2>Frequently Asked Questions</h2>
+      <h3>What is Real Crypto Updates?</h3>
+      <p>We provide reliable crypto signals and auto-trading services to help you trade smarter.</p>
+
+      <h3>How do I receive my signals?</h3>
+      <p>All signals are displayed in our custom dashboard. Pro users receive additional alerts and access.</p>
+
+      <h3>Can I upgrade my plan later?</h3>
+      <p>Yes! You can upgrade to Pro anytime and unlock additional features.</p>
+
+      <h3>How secure is the payment process?</h3>
+      <p>Payments are securely processed via Revolut, ensuring safety and speed.</p>
+
+      <h3>Do you offer refunds?</h3>
+      <p>Since our signals are digital, we don't offer refunds, but you can cancel anytime.</p>
+    </div>
+  </footer>
 </body>
 </html>
