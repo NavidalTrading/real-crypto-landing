@@ -188,13 +188,15 @@
   <!-- Crypto Daniel Chatbox -->
 <div id="chat-container" ... > ... </div>
   <!-- Crypto Daniel Chatbox -->
-<div id="chat-container" style="position: fixed; bottom: 90px; right: 20px; width: 360px; background: rgba(0,0,0,0.85); border-radius: 12px; padding: 12px; color: white; z-index: 9999; box-shadow: 0 0 12px rgba(0,0,0,0.3); font-family: Arial, sans-serif;">
-  <div id="chat-box" style="max-height: 280px; overflow-y: auto; margin-bottom: 10px;"></div>
-  <form id="chat-form" style="display: flex; gap: 8px;">
-    <input id="user-input" type="text" placeholder="Ask me anything..." required style="flex: 1; padding: 8px; border-radius: 6px; border: none;">
-    <button type="submit" style="padding: 8px 12px; border: none; background: #00cc99; color: white; border-radius: 6px; cursor: pointer;">Send</button>
-  </form>
-</div>
+ <!-- Chat UI -->
+  <div class="chat-container" style="position: fixed; bottom: 20px; right: 20px; z-index: 999; background: #fff; border-radius: 12px; padding: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.3); width: 300px;">
+    <div class="chat-header" style="font-weight: bold; margin-bottom: 5px;">🤖 Crypto Daniel</div>
+    <div id="chat-box" style="height: 180px; overflow-y: auto; margin-bottom: 5px;"></div>
+    <form id="chat-form">
+      <input type="text" id="user-input" placeholder="Ask me anything..." style="width: 100%; padding: 8px;" required />
+      <button type="submit" style="margin-top: 5px; width: 100%;">Send</button>
+    </form>
+  </div>
 
   <!-- Voice and Logic Integration for Crypto Daniel Chatbot -->
 <script>
