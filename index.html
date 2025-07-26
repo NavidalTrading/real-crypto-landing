@@ -185,6 +185,17 @@
   title="Crypto Daniel AI Assistant"
   style="position: fixed; bottom: 20px; right: 20px; width: 360px; height: 500px; border: none; z-index: 9999; border-radius: 12px; box-shadow: 0 0 12px rgba(0,0,0,0.3);">
 </iframe>
+  <!-- Crypto Daniel Chatbox -->
+<div id="chat-container" ... > ... </div>
+  <!-- Crypto Daniel Chatbox -->
+<div id="chat-container" style="position: fixed; bottom: 90px; right: 20px; width: 360px; background: rgba(0,0,0,0.85); border-radius: 12px; padding: 12px; color: white; z-index: 9999; box-shadow: 0 0 12px rgba(0,0,0,0.3); font-family: Arial, sans-serif;">
+  <div id="chat-box" style="max-height: 280px; overflow-y: auto; margin-bottom: 10px;"></div>
+  <form id="chat-form" style="display: flex; gap: 8px;">
+    <input id="user-input" type="text" placeholder="Ask me anything..." required style="flex: 1; padding: 8px; border-radius: 6px; border: none;">
+    <button type="submit" style="padding: 8px 12px; border: none; background: #00cc99; color: white; border-radius: 6px; cursor: pointer;">Send</button>
+  </form>
+</div>
+
   <!-- Voice and Logic Integration for Crypto Daniel Chatbot -->
 <script>
   // Language Detection
